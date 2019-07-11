@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <div id="exXba">
+      <p id="x1">
+        This is the text in the first child node of the existing element named
+        "exXba".
+      </p>
+      <p id="x2">
+        This is the text in the second child node of the existing element named
+        "exXba".
+      </p>
+    </div>
+    <script>
+      var parent = document.getElementById("exXba");
+      function removeAllChildren(parent) {
+        while (parent.hasChildNodes()) {
+          parent.removeChild(parent.firstChild);
+        }
+      }
+      removeAllChildren(parent);
+    </script>
+  </body>
+</html>
