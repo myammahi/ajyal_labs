@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <script>
+      function ready(e) {
+        alert(e.type);
+      }
+      document.addEventListener("DOMContentLoaded", ready);
+      window.addEventListener("load", ready);
+      window.onbeforeunload = function(e) {
+        debugger;
+        return false;
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+  <body
+    style="display:flex;justify-content: center;align-items: center; flex-direction: column"
+  >
+    <div id="clock"></div>
+    <div>
+      <h1>Stop Watch</h1>
+      <p
+        id="timer"
+        style="height: 20px; width: 150px; border:1px solid black; text-align: center;"
+      >
+        1
+      </p>
+      <button onclick="handler('start')">START</button>
+      <button onclick="handler('stop')">STOP</button>
+      <button onclick="handler('reset')">RESET</button>
+    </div>
+    <script>
+      setInterval(function() {
+        document.getElementById("clock").innerHTML = new Date(
+          Date.now()
+        ).toLocaleString();
+      }, 1000);
+
+      var timerElement = document.getElementById("timer");
+
+      var counter = {
+        value: 1,
+        start: function() {
+          var context = this;
+          if (!this.interval) {
+            this.interval = setInterval(function() {
+              timer.innerHTML = context.value;
+              context.value = ++context.value;
+            }, 1000);
+          }
+        },
+        stop: function() {
+          clearInterval(this.interval);
+          this.interval = undefined;
+        },
+        reset: function() {
+          this.value = 1;
+          timer.innerHTML = this.value;
+        }
+      };
+
+      function handler(action) {
+        switch (action) {
+          case "start":
+            counter.start();
+            break;
+          case "stop":
+            counter.stop();
+            break;
+          case "reset":
+            counter.reset();
+            break;
+          default:
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>

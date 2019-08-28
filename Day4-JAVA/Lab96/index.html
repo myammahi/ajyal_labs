@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Functions</h2>
+    <p>
+      Determining if calling the function without () returns a defined result
+    </p>
+    <p id="demo"></p>
+
+    <script>
+      function toFahrenDigitalE1(C) {
+        return (c * 9) / 5 + 32;
+      }
+      document.getElementById("demo").innerHTML = toFahrenDigitalE1 + "F";
+    </script>
+
+    <p>
+      Accessing a function without () does not return the result <br />
+      but returns the definition of the function instead
+    </p>
+  </body>
+</html>

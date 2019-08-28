@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1 onclick="this.innerHTML = 'Hey DigitalE1!'">CLICK ON THIS TEXT</h1>
+    <p>Lets Debugg</p>
+    <script>
+      var globalVar = 5;
+      function parent() {
+        var parentVar = 10;
+        function child() {
+          var childVar = 20;
+          console.log(globalVar + parentVar + childVar);
+        }
+        child();
+      }
+      parent();
+    </script>
+  </body>
+</html>

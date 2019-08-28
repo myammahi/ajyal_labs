@@ -1,0 +1,122 @@
+h1 {
+  border: 1px solid black;
+}
+html {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  position: relative;
+  background: lightgreen;
+  margin: 0 auto;
+  min-height: 100%;
+  overflow: auto;
+}
+
+#header {
+  height: 100px;
+  background: green;
+  margin: 0 auto;
+}
+
+#header .logo {
+  float: left;
+  padding: 35px;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#header .logo img {
+  width: 150px;
+}
+
+#header .searchBox {
+  float: left;
+  padding: 35px;
+  width: 60%;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#header .searchBox input {
+  height: 30px;
+  width: 80%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#header .welcomeBox {
+  float: left;
+  width: 20%;
+  padding: 30px;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/*subscribe*/
+
+.store-container {
+  padding: 0.01em 16px;
+}
+
+.button {
+  width: 100%;
+  color: #fff;
+  background-color: #000;
+}
+
+.sub {
+  margin-bottom: 16px;
+  color: #fff;
+  background-color: #f44336;
+}
+
+/*footer*/
+
+#footer {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  color: #000;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer1 {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer2 {
+  float: left;
+  width: 100%;
+}
+
+.part {
+  width: 40%;
+}
+
+.store-border {
+  border: 1px solid #ccc;
+}
+
+.store-input {
+  padding: 8px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.socilmedia:hover {
+  opacity: 0.6;
+}
+.large {
+  font-size: 18px;
+}

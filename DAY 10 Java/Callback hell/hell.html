@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <script>
+      function Message() {
+        return new Promise(function(resolve, reject) {
+          setTimeout(function() {
+            resolve("I have been called back by Promise" + "<br>");
+          }, 2000);
+        });
+      }
+      function sync(x) {
+        document.write(x);
+      }
+      Message().then(sync);
+    </script>
+  </body>
+</html>

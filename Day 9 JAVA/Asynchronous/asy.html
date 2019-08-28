@@ -1,0 +1,23 @@
+<html>
+  <script>
+    function sync(x) {
+      document.write(x);
+    }
+    function one() {
+      sync("Hello Students!" + "<br>");
+    }
+
+    function two() {
+      setTimeout(function() {
+        sync("How are you?" + "<br>");
+      }, 500);
+    }
+
+    function three() {
+      sync("How have you been?" + "<br>");
+    }
+    one();
+    two();
+    three();
+  </script>
+</html>

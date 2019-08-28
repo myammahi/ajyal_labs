@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <h3>Callbacks with addEventListener()</h3>
+    <p>Click the button to "call" the function executing the event</p>
+    <button id="myBtn">Call me back</button>
+    <p id="Xba"></p>
+    <button id="myBtn2">Try me too!</button>
+    <script>
+      document.getElementById("myBtn").addEventListener("click", function() {
+        document.getElementById("Xba").innerHTML = "Hello Participants!";
+      });
+      var x = document.getElementById("myBtn2");
+      x.addEventListener("click", myFunction);
+      x.addEventListener("click", someOtherFunction);
+      function myFunction() {
+        alert("This is DigitalE1!");
+
+        function someOtherFunction() {}
+        alert("Hoping you're getting it!");
+      }
+    </script>
+  </body>
+</html>

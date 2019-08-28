@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <h2>JavaScript Array Methods</h2>
+    <p>
+      Deleting elements leaves holes of <b><i> undefined </i></b>in an array.
+    </p>
+
+    <p id="DigitalE11"></p>
+    <p id="DigitalE12"></p>
+
+    <script>
+      var fruits = ["Tomatoes", " Banana", " Watermelons", " Apples"];
+      document.getElementById("DigitalE11").innerHTML =
+        "The top 4 most eaten fruits in the world are: " +
+        fruits +
+        "<br>" +
+        "The most eaten fruit in the world is: " +
+        fruits[0];
+
+      delete fruits[0];
+      document.getElementById("DigitalE12").innerHTML =
+        "The most eaten fruit in the world is: " +
+        fruits[0] +
+        "<br>" +
+        "Remaining array of fruits is: " +
+        fruits;
+    </script>
+  </body>
+</html>

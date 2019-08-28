@@ -8,7 +8,8 @@
         background: red;
         position: relative;
         -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-        animation: mymove 5s infinite;
+        animation: infinite mymove 5s;
+        animation-direction: alternate;
       }
       @-webkit-keyframes mymove {
         from {
@@ -24,6 +25,7 @@
         }
         to {
           left: 200px;
+          border-radius: 50%;
         }
       }
     </style>

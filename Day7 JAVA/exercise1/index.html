@@ -1,0 +1,32 @@
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      var arr = [
+        "banana",
+        "apple",
+        "orange",
+        "peach",
+        "banana",
+        "apple",
+        "orange",
+        "peach",
+        "Lemon",
+        "Mango",
+        "Mango"
+      ];
+
+      /* function isUnique(arr, value) {
+        return arr.indexOf(value) === arr.lastIndexOf(value);
+      }
+      document.getElementById("demo").innerHTML = isUnique(arr, value);*/
+
+      function isUnique2(arr, value) {
+        var isUnique1 = function(arr, value) {
+          return arr.indexOf(value) === arr.lastIndexOf(value);
+        };
+        return isUnique1(arr, value);
+      }
+    </script>
+  </body>
+</html>

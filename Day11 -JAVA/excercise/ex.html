@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <script>
+      
+       function add (a, b) {
+      setTimeout(function() {
+        console.log (a + b);}, 2000)}
+
+
+        var action = function(a,b) {console.log(a+b);}
+
+        function calc (a,b,action){
+      setTimeout(function() {
+        return   action (a,b);}, 2000)}
+
+        calc(3,5,action);
+
+
+        
+     
+    </script>
+  </body>
+</html>
